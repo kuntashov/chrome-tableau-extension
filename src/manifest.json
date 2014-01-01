@@ -1,0 +1,17 @@
+{
+	"name": "Tableau for Google Chrome",
+	"version": "0.0.1",
+	"manifest_version": 2,
+	"browser_action": {
+		"default_icon": {
+			"19": "icons/tab-new-19x19.png",
+			"38": "icons/tab-new-38x38.png"
+		},
+		"default_title": "Tableau for Google Chrome",
+		"default_popup": "popup.html"
+	},
+	
+	"permissions": [
+    	"tabs", "http://*/*", "https://*/*"
+	]
+}

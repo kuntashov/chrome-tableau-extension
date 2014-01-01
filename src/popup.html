@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+
+	<title>Tableau for Google Chrome</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<style>
+		body {
+			min-width: 609px;
+			overflow: hidden;
+		}
+		.container {
+			margin: 0 auto;
+			
+		}
+		.column {
+			float: left;
+			margin-right: 1px;
+			overflow: hidden;
+			width: 200px;
+		}
+		.last { 
+			margin-right: 0; 
+		}
+		.clearfix:after, .container:after{
+			content: ".";
+			display: block;
+			height: 0;
+			clear: both;
+			visibility: hidden;
+		}
+		.clearfix, .container { 
+			display: inline-block; 
+		}
+
+		div.box {
+			display: table-row;
+			width: 200px;
+			height: 100px;
+			text-align: center;
+		}
+
+		a {
+			display: table-cell;
+			width: 200px;
+			height: 100px;
+			vertical-align: middle;
+
+			background: -webkit-linear-gradient(-45deg, #eeeeee 0%,#ffffff 100%);
+		}
+
+		.bg-redmine {	
+			background: -webkit-linear-gradient(-45deg, #ff5c5c 0%, #ffffff 100%);
+		}
+
+		.bg-rms {
+			background: -webkit-linear-gradient(-45deg, #f1da36 0%, #fefcea 100%); 
+		}
+
+		.bg-myshows {
+			background: -webkit-linear-gradient(-45deg, #e9f6fd 0%,#d3eefb 100%);
+		}
+
+		.bg-rutracker {
+			background: -webkit-linear-gradient(-45deg, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%);
+		}
+
+		.bg-bitrix {
+			background: -webkit-linear-gradient(-45deg, #b7df2d 0%,#e3f5ab 33%,#f8ffe8 100%); 
+		}
+
+	</style>
+	<script src="popup.js"></script>
+</head>
+<body>
+
+		<div class="container">
+
+			<div class="column box">
+				<a href="https://gmail.com" class="item">GMail</a>
+			</div>
+
+			<div class="column box">
+				<a href="http://task.mediahero.su" class="item bg-redmine">Задачи<br/>Медиагероев</a>
+			</div>	
+
+			<div class="column box last">
+				<a href="http://abelov.com/rms/" class="item bg-rms">РМС</a>
+			</div>
+
+			<div class="column box">
+				<a href="http://partners.1c-bitrix.ru/personal/" class="item bg-bitrix">1С-Битрикс<br/>Кабинет партнера</a>
+			</div>	
+
+			<div class="column box">
+				<a href="http://myshows.ru" class="item bg-myshows">MyShows.ru</a>
+			</div>	
+
+			<div class="column box last">
+				<a href="http://rutracker.org" class="item bg-rutracker">RuTracker.org</a>
+			</div>
+
+		</div>
+
+</body>
+</html>
