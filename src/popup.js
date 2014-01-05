@@ -1,13 +1,15 @@
 function onTableauLinkClick(e) {
-	
-	/* Ctrl+Click opens new tab automatically. */
-	if (e.ctrlKey) 
-		return;
 
-	/* Just open clicked item in current window. */
+	var props = { 'url': e.target.href };
+
 	e.preventDefault();
-
-	chrome.tabs.executeScript(null, {code:"window.location='" + e.target.href + "';"});
+	
+	if (e.ctrlKey) {
+		props['active'] = e.altKey;
+		chrome.tabs.create(props);
+	}
+	else
+		chrome.tabs.update(props);
 
 	window.close();			
 }
